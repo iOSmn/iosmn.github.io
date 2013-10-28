@@ -309,9 +309,9 @@
 
         <script>
 
-        // Countdown
-        var newYear = new Date(2013, 10, 15); 
-        $('#defaultCountdown').countdown({until: newYear});
+        // Countdown to 4 Nov 2013 (n.b. Javascript months are 0-indexed!)
+        var nextMeeting = new Date(2013, 10, 4, 19, 0, 0);
+        $('#defaultCountdown').countdown({until: nextMeeting});
 
         // Pulsate
         $('.linked').pulsate({
